@@ -1,0 +1,39 @@
+#
+# Macro file for "Calorimeter.cc"
+# (can be run in batch, without graphic)
+# It shows how to introduce simple tallies
+#
+#
+/control/verbose 2
+/run/verbose 2
+#
+/calorimeter/det/setMat Water
+/calorimeter/det/setSizeX  20 cm
+/calorimeter/det/setSizeYZ 20 cm
+#
+/calorimeter/det/tallyNumber 4
+/calorimeter/det/tallyDefinition 0 2. 2. 2. mm
+/calorimeter/det/tallyDefinition 1 2. 2. 2. mm
+/calorimeter/det/tallyDefinition 2 2. 2. 2. mm
+/calorimeter/det/tallyDefinition 3 2. 2. 2. mm
+/calorimeter/det/tallyPosition 0 -9.9 0. 0. cm
+/calorimeter/det/tallyPosition 1 -5.  0. 0. cm
+/calorimeter/det/tallyPosition 2  0.  0. 0. cm
+/calorimeter/det/tallyPosition 3  5.  0. 0. cm
+#
+/calorimeter/phys/addPhysics  local	# em physics
+#
+/run/initialize
+#
+/gun/particle proton
+/gun/energy 160 MeV
+#
+# beam size
+/calorimeter/gun/rndm 3 mm
+#
+# limit the step size
+/calorimeter/stepMax 1 mm
+#
+/run/printProgress 1000
+#
+/run/beamOn 10000

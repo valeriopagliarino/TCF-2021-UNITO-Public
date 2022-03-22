@@ -1,0 +1,33 @@
+/run/verbose 2
+/calorimeter/det/setMat Water
+/calorimeter/det/setSizeX 10 cm
+/calorimeter/det/setSizeYZ 100 cm
+/calorimeter/det/tallyNumber 1
+/calorimeter/det/tallyDefinition 0 8. 100. 100. mm
+/calorimeter/det/tallyPosition 0 -4.0 0. 0. cm
+/calorimeter/det/tallyMat 0 CaF2
+/run/initialize
+/gun/particle proton
+/gun/energy 180 MeV
+/run/printProgress 1000
+/vis/open DAWNFILE
+/vis/sceneHandler/create DAWNFILE
+/vis/viewer/create ! ! 600
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/vis/viewer/zoom 3.4
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+/vis/scene/notifyHandlers
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 1
+/vis/scene/notifyHandlers scene-0
+/vis/scene/add/hits
+/vis/scene/notifyHandlers
+/vis/scene/endOfEventAction accumulate
+/run/beamOn 10000
+/vis/scene/notifyHandlers scene-0

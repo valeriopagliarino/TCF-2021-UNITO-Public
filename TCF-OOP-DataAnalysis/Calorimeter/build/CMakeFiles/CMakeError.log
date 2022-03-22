@@ -1,0 +1,77 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/ValerioPagliarino/anaconda2/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe
+Id flags:  
+
+The output was:
+1
+ld: warning: ignoring file /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, file was built for unsupported file format ( 0x2D 0x2D 0x2D 0x20 0x21 0x74 0x61 0x70 0x69 0x2D 0x74 0x62 0x64 0x2D 0x76 0x33 ) which is not the architecture being linked (x86_64): /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd
+ld: dynamic main executables must link with libSystem.dylib for architecture x86_64
+clang-4.0: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/ValerioPagliarino/Desktop/Calorimeter/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/ValerioPagliarino/anaconda2/bin/make -f Makefile cmTC_2d32b/fast && /Users/ValerioPagliarino/anaconda2/bin/make  -f CMakeFiles/cmTC_2d32b.dir/build.make CMakeFiles/cmTC_2d32b.dir/build
+make[1]: Entering directory '/Users/ValerioPagliarino/Desktop/Calorimeter/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2d32b.dir/CMakeCCompilerABI.c.o
+/Users/ValerioPagliarino/anaconda2/bin/x86_64-apple-darwin13.4.0-clang   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe    -v -Wl,-v -MD -MT CMakeFiles/cmTC_2d32b.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_2d32b.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_2d32b.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.22.2/share/cmake/Modules/CMakeCCompilerABI.c
+clang version 4.0.1 (tags/RELEASE_401/final)
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /Users/ValerioPagliarino/anaconda2/bin
+clang-4.0: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Users/ValerioPagliarino/anaconda2/bin/clang-4.0" -cc1 -triple x86_64-apple-macosx10.9.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -masm-verbose -munwind-tables -target-cpu core2 -target-feature +ssse3 -target-linker-version 241.9 -v -dwarf-column-info -debugger-tuning=lldb -coverage-notes-file /Users/ValerioPagliarino/Desktop/Calorimeter/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_2d32b.dir/CMakeCCompilerABI.c.gcno -resource-dir /Users/ValerioPagliarino/anaconda2/bin/../lib/clang/4.0.1 -dependency-file CMakeFiles/cmTC_2d32b.dir/CMakeCCompilerABI.c.o.d -sys-header-deps -MT CMakeFiles/cmTC_2d32b.dir/CMakeCCompilerABI.c.o -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -O2 -fdebug-compilation-dir /Users/ValerioPagliarino/Desktop/Calorimeter/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fblocks -fobjc-runtime=macosx-10.9.0 -fencode-extended-block-signature -fmax-type-align=16 -fdiagnostics-show-option -vectorize-loops -vectorize-slp -o CMakeFiles/cmTC_2d32b.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.22.2/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 4.0.1 based upon LLVM 4.0.1 default target x86_64-apple-darwin17.5.0
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/ValerioPagliarino/anaconda2/bin/../lib/clang/4.0.1/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_2d32b
+/usr/local/Cellar/cmake/3.22.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d32b.dir/link.txt --verbose=1
+/Users/ValerioPagliarino/anaconda2/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -v -Wl,-v CMakeFiles/cmTC_2d32b.dir/CMakeCCompilerABI.c.o -o cmTC_2d32b 
+clang version 4.0.1 (tags/RELEASE_401/final)
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /Users/ValerioPagliarino/anaconda2/bin
+ "/Users/ValerioPagliarino/anaconda2/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /Users/ValerioPagliarino/anaconda2/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.9.0 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_2d32b -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -v CMakeFiles/cmTC_2d32b.dir/CMakeCCompilerABI.c.o -lSystem /Users/ValerioPagliarino/anaconda2/bin/../lib/clang/4.0.1/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT: ld64-274.2
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/Users/ValerioPagliarino/anaconda2/lib
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+ld: warning: ignoring file /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, file was built for unsupported file format ( 0x2D 0x2D 0x2D 0x20 0x21 0x74 0x61 0x70 0x69 0x2D 0x74 0x62 0x64 0x2D 0x76 0x33 ) which is not the architecture being linked (x86_64): /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd
+ld: dynamic main executables must link with libSystem.dylib for architecture x86_64
+clang-4.0: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_2d32b.dir/build.make:100: cmTC_2d32b] Error 1
+make[1]: Leaving directory '/Users/ValerioPagliarino/Desktop/Calorimeter/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_2d32b/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/ValerioPagliarino/Desktop/Calorimeter/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/ValerioPagliarino/anaconda2/bin/make -f Makefile cmTC_bd4ae/fast && /Users/ValerioPagliarino/anaconda2/bin/make  -f CMakeFiles/cmTC_bd4ae.dir/build.make CMakeFiles/cmTC_bd4ae.dir/build
+make[1]: Entering directory '/Users/ValerioPagliarino/Desktop/Calorimeter/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bd4ae.dir/testCCompiler.c.o
+/Users/ValerioPagliarino/anaconda2/bin/x86_64-apple-darwin13.4.0-clang   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -MD -MT CMakeFiles/cmTC_bd4ae.dir/testCCompiler.c.o -MF CMakeFiles/cmTC_bd4ae.dir/testCCompiler.c.o.d -o CMakeFiles/cmTC_bd4ae.dir/testCCompiler.c.o -c /Users/ValerioPagliarino/Desktop/Calorimeter/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_bd4ae
+/usr/local/Cellar/cmake/3.22.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd4ae.dir/link.txt --verbose=1
+/Users/ValerioPagliarino/anaconda2/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs  CMakeFiles/cmTC_bd4ae.dir/testCCompiler.c.o -o cmTC_bd4ae 
+ld: warning: ignoring file /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, file was built for unsupported file format ( 0x2D 0x2D 0x2D 0x20 0x21 0x74 0x61 0x70 0x69 0x2D 0x74 0x62 0x64 0x2D 0x76 0x33 ) which is not the architecture being linked (x86_64): /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd
+ld: dynamic main executables must link with libSystem.dylib for architecture x86_64
+clang-4.0: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_bd4ae.dir/build.make:100: cmTC_bd4ae] Error 1
+make[1]: Leaving directory '/Users/ValerioPagliarino/Desktop/Calorimeter/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_bd4ae/fast] Error 2
+
+
+
