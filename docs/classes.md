@@ -1,4 +1,4 @@
-# DOCS: PROJECT-NAME - Tecniche di Calcolo per la Fisica (4/4)
+# DOCS: Calorimeter-Monte-Carlo - Tecniche di Calcolo per la Fisica (4/4)
 ### <a name="description"></a>6. Class reference
 
 - [TABLE OF CONTENTS](https://valeriopagliarino.github.io/Tecniche-di-calcolo-2021-UNITO/classRef/TOC.html)

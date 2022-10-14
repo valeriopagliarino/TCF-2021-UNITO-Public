@@ -1,4 +1,4 @@
-# DOCS: PROJECT-NAME - Tecniche di Calcolo per la Fisica (3/4)
+# DOCS: Calorimeter-Monte-Carlo - Tecniche di Calcolo per la Fisica (3/4)
 ### <a name="description"></a>4. Architecture and design patterns
 
 - <b> Factory pattern: simulation materials </b>

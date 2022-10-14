@@ -1,4 +1,4 @@
-# DOCS: PROJECT-NAME - Tecniche di Calcolo per la Fisica (1/4)
+# DOCS: Calorimeter-Monte-Carlo - Tecniche di Calcolo per la Fisica (1/4)
 Dip. di Fisica - Università di Torino
 
 <p align="left" width="40">
@@ -11,7 +11,7 @@ Valerio Pagliarino, Francesco Calisto, Lorenzo Cane
 [Repository home page](https://github.com/valeriopagliarino/Tecniche-di-calcolo-2021-UNITO)
 
 ### <a name="description"></a>1. Description
-PROJECT-NAME is a C++ application with the goal of simplyfing simulation and data analysis of a SiPM-based calorimeter experiment in particle physics. <br>
+Calorimeter-Monte-Carlo is a C++ application with the goal of simplyfing simulation and data analysis of a SiPM-based calorimeter experiment in particle physics. <br>
 This application includes a frontend that is able to generate macros for the <b>Geant4</b> Monte Carlo simulation and an embedded online data analysis module based on the CERN ROOT framework. <p>
 This software has been designed and implemented for the 6 CFU course "<b>Tecniche di Calcolo per la Fisica</b>" (Computing techniques for physics) - Physics dept. - University of Turin. <p>
 
